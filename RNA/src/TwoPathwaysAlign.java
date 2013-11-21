@@ -11,30 +11,39 @@ public class TwoPathwaysAlign {
 		ArrayList<String> list=new ArrayList<String>();
 		String line="";
 		String[] first, second;
-		int limit=10;
+		int limit=Integer.MAX_VALUE;
 		int i=0;
+		String previous="";
+		if(in.hasNext()) previous=in.nextLine();
+		list.add(previous);
+		//in.next(); in.next();
 		while(in.hasNext() && i<=limit){
-			line=in.next();
+			line=in.nextLine();
 			//if(line.equals("O")) break;
-			list.add(line);
+			if(!line.equals(previous)){
+				list.add(line);
+			}
 			//in.next();
 			//in.next();
+			previous=line;
 			i++;
 		}
 		first=new String[list.size()];
 		for(int j=0; j<list.size(); j++){
 			first[j]=list.get(j);
-//			System.out.println(first[j]);
 		}
-//		System.out.print("\n\n\n\n\n\n\n");
 		i=0;
 		list=new ArrayList<String>();
+		if(in.hasNext()) previous=in.nextLine();
+		list.add(previous);
+		//in.next(); in.next();
 		while(in2.hasNext() && i<=limit){
-			line=in2.next();
+			line=in2.nextLine();
 			//if(line.equals("O")) break;
-			list.add(line);
+			if(!line.equals(previous)) list.add(line);
 			//in2.next();
 			//in2.next();
+			previous=line;
 			i++;
 		}
 		second=new String[list.size()];

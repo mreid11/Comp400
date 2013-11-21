@@ -71,14 +71,13 @@ public class AlignPathway {
 			//printDistanceMatrix(this.firstPath, this.secondPath, distance);
 			ArrayList<ArrayList<String>> matching=getPath(this.firstPath, this.secondPath, distance);
 			for(int i=0; i<matching.get(0).size(); i++){
-				out.print(matching.get(0).get(i)+" ");
+				out.println(matching.get(0).get(i)+"  |  "+matching.get(1).get(i));
 			}
-			out.println();
-			for(int i=0; i<matching.get(1).size(); i++){
-				out.print(matching.get(1).get(i)+" ");
-			}
-			//System.out.println(matching[0]);
-			//System.out.println(matching[1]);
+			//out.println();
+			//for(int i=0; i<matching.get(1).size(); i++){
+			//	out.print(matching.get(1).get(i)+" ");
+			//}
+
 		}
 		out.close();
 	}
