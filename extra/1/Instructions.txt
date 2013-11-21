@@ -1,0 +1,3 @@
+Kinfold --time=100 AGAUUCUGCGUCUGUAUGUGAGUUGUAUGAUGCUGUAGUCUGCAUGUCA
+http://stackoverflow.com/questions/9270367/repeatedly-calling-a-command-in-a-for-loop-is-producing-the-same-output-each-tim
+http://www.dna.caltech.edu/~hariadi/Constantine/SURF05/program/DNAdesign/RNAkinfold.m
